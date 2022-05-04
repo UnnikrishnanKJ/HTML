@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML LAB1 FORMS</title>
+
+	<style type="text/css">
+		body{
+			background-color: slategrey;
+			margin-top: 100px;
+		}
+
+		form{
+			text-align: center;
+			font-stretch: extra-condensed;
+			font-size: medium;
+			color: whitesmoke;
+		}
+
+	</style>
+</head>
+<body>
+	<h1 style="text-align: center;">FORM</h1>
+	<p style="font-size: smaller;"><center>Please fill the below form to continue.</center></p>
+
+	<!-- form -->
+	<form>
+  		<label for="fname">Name : &nbsp&nbsp</label>
+  		<input type="text" id="name" name="name" placeholder="please enter your name" required maxlength="25"><br><br>
+  		<label for="email">Mail ID : </label>
+  		<input type="email" id="email" name="email" placeholder="test@example.com" required><br><br>
+  		<label for="pwd">Password: </label>
+  		<input type="password" id="pw" name="pw" required minlength="6"><br><br>
+
+  		<!-- drop down -->
+  		<label for="pr">Choose : &nbsp</label>
+  		<select id="pr" name="pr" required>
+    			<option value="1">Student</option>
+    			<option value="2">Employee</option>
+    			<option value="3" selected>Freelancer</option>
+  		</select><br><br>
+
+  		<!-- date -->
+  		<label for="date">Event Date : </label>
+  		<input type="date" id="date" name="date" required><br><br>
+
+  		<!-- radio -->
+  		<p>Number of tickets :
+  		<input type = "radio" name = "ticket" value = "1" required> 1-ticket
+         	<input type = "radio" name = "ticket" value = "2" checked required> 2-ticket
+         	<input type = "radio" name = "ticket" value = "3" required> 3-ticket
+         	</p>
+
+         	<!-- checkbox -->
+         	<input type="checkbox" name="payment" value="pay" required>Online payment<br><br>
+
+         	<!-- text area and submit -->
+         	<textarea rows = "5" cols = "50" name = "description"></textarea><br><br>
+         	<input type = "submit" value = "submit" /><br><br>
+	</form>
+</body>
+</html>
